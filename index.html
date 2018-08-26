@@ -12,10 +12,18 @@
 <script>
 var app = angular.module("App", []);
 
-app.controller("AppController", function($scope){
+//パラメータを受け取るための準備
+app.config(["$locationProvider", function($locationProvider) {
+	$locationProvider.html5Mode(true);
+}]);
+
+
+
+app.controller("AppController", function($scope, $location){
 	//ここでModelとのやりとりなど。
 	
-	$scope.text = "test";
+	alert("aaaaa");
+	$scope.displayText = $location.name;
 	
 	$scope.display = function(){
 		alert("hello!");
