@@ -2,14 +2,29 @@
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
 <title></title>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="">
+<script>
+var app = angular.module('App', []);
+
+app.controller('AppController', function($scope){
+	//ここでModelとのやりとりなど。
+	$scope.display = function(){
+  	var str = $scope.displayText;
+		$scope.text = str;
+  }
+});
+</script>
 </head>
-<body>
-Hello
+<body ng-controller="AppController">
+	<input type="text"   ng-model="displayText">
+	<input type="button" value="Go" ng-click="display()">
+	<h1>{{text}}</h1>
+	<div>Hello world!</div>
 </body>
 </html>
