@@ -14,8 +14,11 @@ var app = angular.module('App', []);
 
 app.controller('AppController', function($scope){
 	//ここでModelとのやりとりなど。
+	
+	$scope.text = "test";
+	
 	$scope.display = function(){
-  	var str = $scope.displayText;
+		var str = $scope.displayText;
 		$scope.text = str;
   }
 });
