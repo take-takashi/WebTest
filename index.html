@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script src="js/angular.min.js"></script>
@@ -10,9 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="">
 <script>
-var app = angular.module('App', []);
+var app = angular.module("App", []);
 
-app.controller('AppController', function($scope){
+app.controller("AppController", function($scope){
 	//ここでModelとのやりとりなど。
 	
 	$scope.text = "test";
