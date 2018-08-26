@@ -18,8 +18,9 @@ app.controller("AppController", function($scope){
 	$scope.text = "test";
 	
 	$scope.display = function(){
+		alert("hello!");
 		var str = $scope.displayText;
-		$scope.text = str;
+		$scope.displayText = str;
   }
 });
 </script>
