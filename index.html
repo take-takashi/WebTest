@@ -22,18 +22,18 @@ app.config(["$locationProvider", function($locationProvider) {
 app.controller("AppController", function($scope){
 	//ここでModelとのやりとりなど。
 	
-	//alert("aaaaa");
+	//alert('aaaaa');
 	//$scope.displayText = $location.search()[name];
 	
 	$scope.display = function(){
-		alert("hello!");
+		alert('hello!');
 		var str = $scope.displayText;
 		$scope.displayText = str;
-	}
+	};
 	
 	$scope.submit = function(){
-		alert("aaaaaaa");
-	}
+		alert('aaaaaaa');
+	};
 });
 </script>
 </head>
