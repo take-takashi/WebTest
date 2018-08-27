@@ -14,7 +14,7 @@ var app = angular.module("App", []);
 
 //パラメータを受け取るための準備
 app.config(["$locationProvider", function($locationProvider) {
-	$locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 }]);
 
 
@@ -22,7 +22,7 @@ app.config(["$locationProvider", function($locationProvider) {
 app.controller("AppController", function($scope){
 	//ここでModelとのやりとりなど。
 	
-	alert("aaaaa");
+	//alert("aaaaa");
 	//$scope.displayText = $location.search()[name];
 	
 	$scope.display = function(){
@@ -40,7 +40,7 @@ app.controller("AppController", function($scope){
 <body ng-controller="AppController">
 	<input type="text"   ng-model="displayText">
 	<!-- <input type="button" value="Go" ng-click="display()"> -->
-	<input type="submit" value="GO">
+	<input type="submit" value="YEAH">
 	<h1>{{displayText}}</h1>
 	<div>Hello world!</div>
 </body>
