@@ -23,7 +23,7 @@ app.controller("AppController", function($scope, $location){
 	//ここでModelとのやりとりなど。
 	
 	alert("aaaaa");
-	$scope.displayText = $location.name;
+	$scope.displayText = $location.search()[name];
 	
 	$scope.display = function(){
 		alert("hello!");
