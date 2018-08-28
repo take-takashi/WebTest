@@ -19,7 +19,7 @@ app.config(["$locationProvider", function($locationProvider) {
 
 
 
-app.controller("AppController", function($scope){
+app.controller("AppController", function($scope, $location){
 	//ここでModelとのやりとりなど。
 	
 	//alert('aaaaa');
@@ -27,6 +27,7 @@ app.controller("AppController", function($scope){
 	
 	$scope.display = function(){
 		alert('hello!');
+		alert($location.search()['name']);
 	};
 });
 </script>
